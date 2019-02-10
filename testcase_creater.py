@@ -39,7 +39,7 @@ for x in range(1,testcase_num+1):
     dst_output=work_dir+'\\testcase\\{}{}.{}'.format(prefix,x,output_suffix)
     shutil.move(src_input,dst_input)
     shutil.move(src_output,dst_output)
-if yes_or_no('Do you want to create a zip file whitch contents the testcases?'):
+if yes_or_no('Do you want to create a zip file witch contents the testcases?'):
     zip_filename=input("Please input the zip filename.(No suffix):\n")
     zip_dir(work_dir+'\\testcase',zip_filename+'.zip')
 else:
